@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nana Forex Cartel</title>
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+
+  <!----======== CSS ======== -->
+  <link rel="stylesheet" href="assets/css/register.css">
+
+  <!----===== Iconscout CSS ===== -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <!-- Google fonts -->
+  <link href="//fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Fontawesome cdn- incons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="" id="logo">
+        Enrollment Form
+      </a>
+    </header>
+
+    <form action="#">
+      <div class="form first">
+        <div class="details personal">
+
+          <div class="fields">
+            <div class="input-field">
+              <label for="name">Surname</label>
+              <input type="text" placeholder="Enter your surname" name="surname" required id="surname">
+            </div>
+
+            <div class="input-field">
+              <label for="fname">First Name</label>
+              <input type="text" placeholder="Enter your first name" name="fname" required id="fname">
+            </div>
+
+            <div class="input-field">
+              <label for="email">Email</label>
+              <input type="text" placeholder="Enter your email" name="email" id="email" required>
+            </div>
+
+            <div class="input-field">
+              <label for="mobile">Mobile Number</label>
+              <input type="number" placeholder="Enter mobile number" name="mobile" id="mobile" required>
+            </div>
+
+            <div class="input-field">
+              <label for="select">Gender</label>
+              <select required name="gender" id="select">
+                <option disabled selected>Select gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Others</option>
+              </select>
+            </div>
+
+
+            <div class="input-field">
+              <label>Date of Birth</label>
+              <input type="text" placeholder="Enter your date" name="dob" required id="dob">
+            </div>
+
+            <div class="input-field">
+              <label>Ghana Card Number</label>
+              <input type="text" placeholder="Enter your Ghana card number" required name="ghana" id="ghana">
+            </div>
+
+            <div class="input-field country-selector">
+              <label for="countrySearch">Country</label>
+              <input type="text" id="countrySearch" placeholder="Select your country" onfocus="toggleDropdown()"
+                readonly>
+              <div id="dropdown" class="dropdown">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="details ID">
+          <button class="nextBtn">
+            <span class="btnText">Enroll Now</span>
+          </button>
+        </div>
+
+      </div>
+  </div>
+  </form>
+  </div>
+
+  <script src="assets/js/country.js"></script>
+</body>
+
+</html>
